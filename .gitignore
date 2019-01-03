@@ -1,2 +1,3 @@
+# Disable Node Modules and VS Editor Files
 node_modules/
 .vscode/
