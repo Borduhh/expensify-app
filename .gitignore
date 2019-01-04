@@ -1,3 +1,9 @@
 # Disable Node Modules and VS Editor Files
 node_modules/
 .vscode/
+
+# Production Files to ignore
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
