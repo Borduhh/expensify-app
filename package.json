@@ -29,6 +29,7 @@
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
@@ -42,6 +43,7 @@
     "enzyme-to-json": "^3.3.5",
     "jest": "^23.6.0",
     "react-test-renderer": "^16.7.0",
+    "redux-mock-store": "^1.5.3",
     "webpack-dev-server": "^3.1.14"
   },
   "scripts": {

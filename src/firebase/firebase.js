@@ -13,27 +13,4 @@ firebase.initializeApp(config);
 
 const db = firebase.database();
 
-db.ref('expenses').on('child_removed', (snapshot) => {
-  console.log(snapshot.key, snapshot.val());
-});
-
-db.ref('expenses').on('child_changed', (snapshot) => {
-  console.log(snapshot.key, snapshot.val());
-});
-
-db.ref('expenses').on('child_added', (snapshot) => {
-  console.log(snapshot.key, snapshot.val());
-});
-
-
-// db.ref('expenses').on('value', (snapshot) => {
-//   const expenses = [];
-
-//   snapshot.forEach((childSnapshot) => {
-//     expenses.push({
-//       id: childSnapshot.key,
-//       ...childSnapshot.val()
-//     });
-//   });
-
-// });
+export { firebase, db as default };
