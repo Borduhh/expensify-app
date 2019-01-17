@@ -6,6 +6,7 @@ export const addExpense = (expense) => ({
   expense
 });
 
+// Async start add expense
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch) => {
     const {
@@ -42,3 +43,26 @@ export const removeExpense = ({ id } = {}) => ({
   id
 });
 
+// SET_EXPENSES Action
+export const setExpenses = (expenses) => ({
+  type: 'SET_EXPENSES',
+  expenses
+});
+
+// Async set expenses
+export const startSetExpenses = () => {
+  return (dispatch) => {
+    return db.ref('expenses').once('value').then((snapshot) => {
+        const expenseData = [];
+
+        snapshot.forEach((expense) => {
+          expenseData.push({
+            id: expense.key,
+            ...expense.val()
+          });
+        });
+
+        dispatch(setExpenses(expenseData));
+      });
+  };
+};
