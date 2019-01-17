@@ -38,6 +38,8 @@
     "webpack-cli": "^3.2.0"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
@@ -50,7 +52,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json ",
     "start": "node server/server.js"
   },
   "author": "Nick Bordeau",

@@ -4,3 +4,7 @@ node_modules/
 
 # Production Files to ignore
 public/dist
+
+# Environment Variables to Ignore
+.env.test
+.env.development
