@@ -1,0 +1,34 @@
+.button { 
+  background: $light-blue;
+  border: solid $mid-blue;
+  border-radius: 2px;
+  border-width: 0 0 5px;
+  color: $white;
+  font-size: $fs-large;
+  font-weight: 200;
+  padding: $m-size;
+  text-decoration: none;
+
+  transition: $trans-what-all $trans-time-normal $trans-how-ease;
+  -webkit-transition: $trans-what-all $trans-time-normal $trans-how-ease;
+  -moz-transition: $trans-what-all $trans-time-normal $trans-how-ease;   
+  -ms-transition: $trans-what-all $trans-time-normal $trans-how-ease;   
+  -o-transition: $trans-what-all $trans-time-normal $trans-how-ease;
+
+  &:hover {
+    background: $mid-blue;
+    border-color: $dark-blue;
+  }
+}
+
+.button--thin {
+  border-width: 0 0 3px;
+  font-size: $fs-medium;
+  padding: $xs-size $l-size;
+}
+
+.button--link {
+  background:none;
+  border:none;
+  padding: 0;
+}

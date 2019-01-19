@@ -1,6 +1,7 @@
 # Disable Node Modules and VS Editor Files
 node_modules/
 .vscode/
+.DS_Store
 
 # Production Files to ignore
 public/dist
