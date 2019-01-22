@@ -9,26 +9,66 @@
   padding: $m-size;
   text-decoration: none;
 
-  transition: $trans-what-all $trans-time-normal $trans-how-ease;
-  -webkit-transition: $trans-what-all $trans-time-normal $trans-how-ease;
-  -moz-transition: $trans-what-all $trans-time-normal $trans-how-ease;   
-  -ms-transition: $trans-what-all $trans-time-normal $trans-how-ease;   
-  -o-transition: $trans-what-all $trans-time-normal $trans-how-ease;
+  transition: all 0.3s ease;
 
   &:hover {
     background: $mid-blue;
     border-color: $dark-blue;
   }
+
 }
 
 .button--thin {
-  border-width: 0 0 3px;
+  @extend .button;
+
+  border-width: 0 0 5px;
   font-size: $fs-medium;
-  padding: $xs-size $l-size;
+  padding: $s-size;
+  text-align: center;
+
+  @media(min-width: $desktop-breakpoint){
+    border-width: 0 0 4px;
+    padding: $xs-size $l-size;
+  }
+
 }
 
 .button--link {
+  @extend .button;
+
   background:none;
   border:none;
   padding: 0;
+}
+
+.button--secondary {
+  @extend .button;
+
+  background: #888888;
+  border-color: #5F5F5F;
+  border-width: 0 0 5px;
+
+  &:hover {
+    background: #5F5F5F;
+    border-color: #424242;
+  }
+
+}
+
+.button--secondary-full-width {
+  @extend .button--secondary;
+
+  display: block;
+  width:100%;
+}
+
+.button--add-expense {
+  @extend .button--thin;
+
+  margin: $m-size 0 0;
+
+  @media(min-width: $desktop-breakpoint){
+    margin: 0;
+  }
+
 }

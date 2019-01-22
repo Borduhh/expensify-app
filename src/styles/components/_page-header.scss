@@ -1,17 +1,29 @@
 .page-header {
   background: $light-grey;
   margin-bottom: $l-size;
-  padding: $l-size 0;
+  padding: $m-size 0;
+
+  @media(min-width: $desktop-breakpoint){
+    padding: $l-size 0;
+  }
 }
 
 .page-header__content {
-  align-items: center;
   display: flex;
+  flex-direction:column;
   justify-content: space-between;
+  text-align:center;
+
+  @media(min-width: $desktop-breakpoint){
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .page-header__title {
+  font-size: 1.6em;
   font-weight: 200;
+  line-height: 1.2;
   margin:0;
 
   span {

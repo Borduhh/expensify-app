@@ -1,0 +1,31 @@
+.input-group--col2 {
+  .SingleDatePicker {
+    margin-bottom: $m-size;
+
+    @media (min-width: $desktop-breakpoint){
+      width:49%;
+      margin-bottom: 0;
+    }
+
+    .SingleDatePickerInput {
+      display:block;
+      text-align: center;
+    }
+  }
+  
+}
+
+.DateInput_fang {
+  left: calc(50% - 10px);
+}
+
+.input-group__item {
+  .DateRangePicker {
+    width: 100%;
+
+    .DateRangePickerInput {
+      display:block;
+    }
+  }
+
+}

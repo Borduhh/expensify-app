@@ -1,0 +1,14 @@
+.loader {
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.loader__image {
+  height: 6rem;
+  margin-bottom: $m-size;
+  width: 6rem;
+}

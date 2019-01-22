@@ -22,7 +22,7 @@ exports[`Should render expense summary with one (1) expense 1`] = `
       </span>
     </h1>
     <Link
-      className="button button--thin"
+      className="button--add-expense"
       replace={false}
       to="/create"
     >
@@ -54,7 +54,7 @@ exports[`Should render expense summary with two (2) expense 1`] = `
       </span>
     </h1>
     <Link
-      className="button button--thin"
+      className="button--add-expense"
       replace={false}
       to="/create"
     >
