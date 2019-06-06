@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 import Header from '../components/Header';
 
-export const PublicRoute = ({ isAuthed, component: Component, ...rest }) => (
+export const PublicRoute = ({ auth: { isAuthenticated }, component: Component, ...rest }) => (
   <Route {...rest} component={(props) => (
     !isAuthed ? (
       <div>
