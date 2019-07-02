@@ -8,8 +8,8 @@ hooks:
   AfterInstall:
     - location: server/depend.sh
       timeout: 1200
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: server/start_server.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
