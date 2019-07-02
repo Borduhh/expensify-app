@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/home/ecs-user/.nvm/versions/node/v10.16.0/bin/npm install
+/home/ec2-user/.nvm/versions/node/v10.16.0/bin/npm install
