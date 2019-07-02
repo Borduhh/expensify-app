@@ -1,3 +1,3 @@
-source /home/ec2-user/.bash_profile
+source ~/.bashrc
 
 node server/server.js
