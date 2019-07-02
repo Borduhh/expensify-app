@@ -2,8 +2,8 @@
 version: 0.0
 os: linux
 files:
-- source: /
-   destination: /home/ec2-user/expensify
+  - source: /
+    destination: /home/ec2-user/expensify
 hooks:
   AfterInstall:
     - location: server/depend.sh
