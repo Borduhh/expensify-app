@@ -7,9 +7,9 @@ files:
 hooks:
   AfterInstall:
     - location: server/depend.sh
-      timeout: 1200
+      timeout: 180
       runas: root
   ApplicationStart:
     - location: server/start_server.sh
-      timeout: 300
+      timeout: 180
       runas: root
