@@ -48,6 +48,9 @@ module.exports = env => {
         },
       ],
     },
+    optimization: {
+      minimize: false, // Turned off due to AWS freezing at build time
+    },
     plugins: [
       CSSExtract,
       // --------------------------------------------------
