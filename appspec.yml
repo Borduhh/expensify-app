@@ -1,3 +1,15 @@
 # Expensify CodeDeploy AppSpec.yml
 version: 0.0
-os: linux 
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/WordPress
+hooks:
+  AfterInstall:
+    - location: server/depend.sh
+      timeout: 1200
+      runas: root
+  ApplicationStart:
+    - location: server/start_server.sh
+      timeout: 300
+      runas: root
